@@ -1,0 +1,40 @@
+{
+    "name": "psc-acme/bridge-shipping",
+    "description": "Package bridge-shipping for psc-acme organization",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philipp Scheit",
+            "email": "p.scheit@packagist.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PscAcme\\BridgeShipping\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.2",
+        "symfony/process": "^7.0",
+        "guzzlehttp/psr7": "^2.0",
+        "psr/event-dispatcher": "^1.0",
+        "guzzlehttp/guzzle": "^7.0",
+        "psr/container": "^2.0",
+        "symfony/http-kernel": "^6.2"
+    },
+    "require-dev": {
+        "webforge/object-asserter": "^2.0.0"
+    },
+    "minimum-stability": "stable",
+    "config": {
+        "secure-http": false
+    },
+    "repositories": {
+        "private-packagist": {
+            "type": "composer",
+            "url": "http://repo.packagist.com.lo/psc-acme/"
+        },
+        "packagist.org": false
+    }
+}
